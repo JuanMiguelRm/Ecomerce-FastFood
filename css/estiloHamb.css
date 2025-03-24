@@ -1,0 +1,607 @@
+/* Importando la fuente desde google*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* 
+Notas: 
+    primera posicion arriba y abajo
+    segunda posicion izquierda y derecha
+    -
+    hover: cambia color al poner cursor
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Clases*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Tamaño Botones del Slide*/
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+/* Colores de botones del Slide*/
+.swiper-button-next {
+    color: #bd241b;
+}
+
+.swiper-button-prev {
+    color: #bd241b;
+}
+
+
+/* Colores de botones de seleccion*/
+.swiper-pagination-bullet {
+    background-color: #d3d2d2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #bd241b;
+    opacity: 1;
+}
+
+/* Diseño Menu*/
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Barra de Navegacion*/
+.barra-navegacion {
+    display: flex;
+}
+
+.menu-1 {
+
+    margin-right: 180px;
+}
+
+.menu-2 {
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+/* Logos */
+.logo-1 {
+    width: 0;
+}
+
+.logo-2 {
+    width: 150px;
+}
+
+
+/* Redes Sociales*/
+.sociales {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #bd241b;
+    border-radius: 50%;
+}
+
+/* cambiar color al poner cursor encima*/
+.social:hover {
+    background-color: #bd241b;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+/* Barra superior menu */
+.menu .barra-navegacion ul li {
+    position: relative;
+    float: left;
+    padding: 10px 10px;
+    /* Ajusta el espaciado horizontal entre elementos */
+}
+
+.menu .barra-navegacion ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+}
+
+/* cambiar color al poner cursor encima*/
+.menu .barra-navegacion ul li:hover a {
+    color: #bd241b;
+}
+
+#menu {
+    display: none;
+}
+
+.menu.icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Seccion de Hamburguesa */
+
+/* Compra de hamburguesas */
+.compra-hamburguesa {
+    background-color: #000000;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.compra-hamburguesa h2 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.hamburguesa {
+    margin: 0 auto 50px;
+    max-width: 300px;
+    border: 1px solid #bd241b;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.hamburguesa img {
+    width: 100%;
+}
+
+.hamburguesa h3 {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.hamburguesa p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hamburguesa p:last-child {
+    font-weight: 800;
+}
+
+.carrito {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #bd241b;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.carrito:hover {
+    background-color: #641612;
+}
+
+
+/* Estilo del menú del carrito */
+
+/* Estilo del botón "Ver Carrito" */
+#ver-carrito {
+    color: #ffffff;
+    /* Cambia el color del texto al deseado */
+    border: none;
+    padding: 5px 10px;
+    /* Ajusta el tamaño según tus preferencias */
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: none;
+    /* Elimina el fondo */
+    border-radius: 0;
+    /* Elimina cualquier borde redondeado */
+    font-size: 14px;
+    /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+#ver-carrito:hover {
+    color: #641612;
+    /* Cambia el color del texto al pasar el cursor */
+}
+
+
+.carrito-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    /* Ajusta el ancho según tus preferencias */
+    height: 100%;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    overflow-y: auto;
+    /* Agrega barra de desplazamiento vertical si es necesario */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001;
+    /* Asegúrate de que el menú esté en la parte superior */
+}
+
+.carrito-menu.show {
+    transform: translateX(0);
+}
+
+.carrito-header {
+    background-color: #bd241b;
+    padding: 20px;
+    text-align: center;
+}
+
+.carrito-header h3 {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.carrito-items {
+    padding: 20px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #bd241b;
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.carrito-item p {
+    margin: 0;
+}
+
+.carrito-total {
+    padding: 20px;
+    text-align: center;
+}
+
+.carrito-total h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Estilo para el botón "Cerrar carrito" */
+.cerrar-carrito {
+    background-color: #bd241b;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cerrar-carrito:hover {
+    background-color: #641612;
+}
+
+/* Estilo para la lista de productos en el carrito */
+.carrito-productos {
+    max-height: 300px;
+    /* Ajusta la altura máxima según tus preferencias */
+    overflow-y: auto;
+    /* Agrega barra de desplazamiento vertical si es necesario */
+}
+
+/* Estilo para los productos en la lista del carrito */
+.carrito-producto {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #bd241b;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Estilo para el botón "Eliminar producto" en la lista del carrito */
+.eliminar-producto {
+    background-color: #bd241b;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.eliminar-producto:hover {
+    background-color: #641612;
+}
+
+
+
+
+/* Diseñando Informacion*/
+
+.info {
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.info-img {
+    width: 50%;
+}
+
+.info-img img {
+    width: 500px;
+    height: 250px;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.info-text h2 {
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.info-text p {
+    font-size: 18px;
+    color: #a7a7a7;
+    margin-bottom: 50px;
+}
+
+.boton-2 {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #bd241b;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.boton-2:hover {
+    background-color: #641612;
+}
+
+
+/* Seccion Inferior*/
+.footer {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlaces h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.enlaces ul li a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+
+/* Parte responsive o adaptativa
+
+dispositivos con un ancho de pantalla máximo de 991 píxeles o menos
+*/
+@media (max-width: 991px) {
+    .menu {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu-2 {
+        display: none;
+    }
+
+    .logo-1 {
+        width: 100px;
+    }
+
+    .logo-2 {
+        width: 100px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .barra-navegacion {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .barra-navegacion ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.barra-navegacion {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .slider-text {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-text h1 {
+        font-size: 50px;
+    }
+
+    .slider-text p {
+        font-size: 16px;
+    }
+
+    .boton-1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-img img {
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    /*
+    Estas reglas aplican estilos comunes a los elementos de paginación de un carrusel Swiper
+    */
+    .swiper-horizontal>.swiper-pagination-bullet,
+    .swiper-pagination-bullet,
+    .swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: -7px;
+    }
+
+    .tabs {
+        padding: 50px 30px;
+    }
+
+    .tabs label {
+        width: 33%;
+    }
+
+    .info {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .info-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-img img {
+        width: 400px;
+        height: 200px;
+        margin: 25px;
+    }
+
+    .info-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-text h2 {
+        font-size: 50px;
+    }
+
+    .info-text p {
+        font-size: 16px;
+    }
+
+    .boton-1 {
+        font-size: 16px;
+    }
+
+    .horario {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .horario-info h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .horario-text {
+        flex-direction: column;
+    }
+
+    .sociales {
+        justify-content: center;
+    }
+
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enlaces h4 {
+        margin: 25px 0px 10px 0px;
+    }
+}

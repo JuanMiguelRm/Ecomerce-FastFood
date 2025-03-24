@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Food</title>
+
+    <!-- Librería "Swiper" para el carrusel o slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Cargar la hoja de estilo CSS -->
+    <link rel="stylesheet" href="../css/estiloProductos.css">
+</head>
+
+<body>
+    <header>
+        <!-- Creación del Menú -->
+        <div class="menu container">
+            <!-- Logos -->
+            <img class="logo-1" src="../assets/img/logo.svg" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../assets/img/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <!-- Barra De Navegación -->
+            <nav class="barra-navegacion">
+                <div class="menu-1">
+                    <!-- Listas -->
+                    <ul>
+                        <!-- Enlaces o Direcciones -->
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                </div>
+
+                <img class="logo-2" src="../assets/img/logo.svg" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horarios</a></li>
+                    </ul>
+                    <!-- Redes Sociales-->
+                    <div class="sociales">
+
+                        <!--Enlace Redes (1)-->
+                        <a href="#">
+                            <div class="social">
+                                <img src="../assets/img/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <!--Enlace Redes (2)-->
+                        <a href="#">
+                            <div class="social">
+                                <img src="../assets/img/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <!--Enlace Redes (3)-->
+                        <a href="#">
+                            <div class="social">
+                                <img src="../assets/img/s3.svg" alt="">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Botón "Ver Carrito" -->
+                <button id="ver-carrito">Carrito</button>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Productos -->
+    <main class="productos">
+        <!-- Creación de Pestañas o Tabs -->
+        <div class="tabs container">
+            <!-- Pestaña 1 -->
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Hamburguesa</label>
+            <div class="tab">
+                <div class="swiper carrusel-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <!-- Producto 1 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food1.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Hamburguesa</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 25K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Hamburguesa"
+                                        data-precio="25.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto 2 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food2.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Sandwich</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 25K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Sandwich"
+                                        data-precio="25.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food3.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Sandwich 2</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 25K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Sandwich 2"
+                                        data-precio="25.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones para pasar y devolver el carrusel -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!-- Pestaña 2 -->
+            <input type="radio" name="tabs" id="tab2" class="tabInput" value="2">
+            <label for="tab2">Burritos</label>
+            <div class="tab">
+                <div class="swiper carrusel-2" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <!-- Producto 1 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food4.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Burrito Carne</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 15K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Burrito Carne"
+                                        data-precio="15.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto 2 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food5.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Burrito Vegano</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 10K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Burrito Vegano"
+                                        data-precio="10.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones para pasar y devolver el carrusel -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!-- Pestaña 3 -->
+            <input type="radio" name="tabs" id="tab3" class="tabInput" value="3">
+            <label for="tab3">Variedades</label>
+            <div class="tab">
+                <div class="swiper carrusel-2" id="swiper3">
+                    <div class="swiper-wrapper">
+                        <!-- Producto 1 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food7.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Bandeja especial</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 30K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Bandeja Especial"
+                                        data-precio="30.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto 2 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food8.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Pinchos De Carne</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 15K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Pinchos de Carne"
+                                        data-precio="15.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto 3 -->
+                        <div class="swiper-slide">
+                            <div class="producto">
+                                <div class="producto-img">
+                                    <h4>Nuevo</h4>
+                                    <!-- Imagen del Producto -->
+                                    <img src="../assets/img/food9.png" alt="">
+                                </div>
+                                <div class="producto-text">
+                                    <h4>Pizza</h4>
+                                    <!-- Descripción -->
+                                    <p>Ingredientes de Alta Calidad</p>
+                                    <!-- Precio -->
+                                    <span class="precio">$ 5K</span>
+                                    <!-- Botón de compra -->
+                                    <button class="carrito" data-producto="Pizza"
+                                        data-precio="5.00">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones para pasar y devolver el carrusel -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Menú del carrito -->
+        <div class="carrito-menu">
+            <div class="carrito-header">
+                <h3>Carrito de Compras</h3>
+            </div>
+            <div class="carrito-items">
+                <div class="carrito-productos">
+                    <ul id="lista-productos">
+                        <!-- Los productos del carrito se mostrarán aquí -->
+                    </ul>
+                </div>
+            </div>
+            <div class="carrito-total">
+                <h4>Total: $<span id="total-carrito">0.0</span></h4>
+            </div>
+            <button class="cerrar-carrito" id="cerrar-carrito">Cerrar Carrito</button>
+        </div>
+
+    </main>
+
+    <!-- Sección de Información -->
+    <section class="info container">
+        <div class="info-img">
+            <img src="../assets/img/info.png" alt="">
+        </div>
+        <div class="info-text">
+            <h2>Información</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At illo, recusandae fuga beatae voluptatem,
+                dolorum dolores voluptates sit excepturi cum qui veritatis modi ipsa exercitationem quisquam mollitia
+                delectus a ex!
+            </p>
+            <a href="/pages/info.html" class="boton-2">Más Información</a>
+        </div>
+    </section>
+
+    <!-- Enlaces y Links -->
+    <footer class="footer container">
+        <img class="logo-2" src="../assets/img/logo.svg" alt="">
+        <div class="enlaces">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="enlaces">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <!-- Links Redes Sociales -->
+        <div class="enlaces">
+            <h4>Redes Sociales</h4>
+            <div class="sociales">
+                <!-- Enlace Redes (1) -->
+                <a href="#">
+                    <div class="social">
+                        <img src="../assets/img/s1.svg" alt="">
+                    </div>
+                </a>
+                <!-- Enlace Redes (2) -->
+                <a href="#">
+                    <div class="social">
+                        <img src="../assets/img/s2.svg" alt="">
+                    </div>
+                </a>
+                <!-- Enlace Redes (3) -->
+                <a href="#">
+                    <div class="social">
+                        <img src="../assets/img/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cargar archivo JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

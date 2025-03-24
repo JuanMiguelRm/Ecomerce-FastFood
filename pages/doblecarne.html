@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up Food</title>
+
+    <!-- libreria "Swiper" para el carrusel o slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!--  cargar la hoja de estilo CSS -->
+    <link rel="stylesheet" href="../css/estiloDobleC.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Creacion del Menu-->
+        <div class="menu container">
+            <!--Logos-->
+            <img class="logo-1" src="../assets/img/logo.svg" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../assets/img/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <!-- Barra De Navegacion-->
+            <nav class="barra-navegacion">
+                <div class="menu-1">
+                    <!--Listas-->
+                    <ul>
+                        <!--Enlaces o Direcciones-->
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="/pages/productos.html">Productos</a></li>
+                    </ul>
+                </div>
+
+
+                <img class="logo-2" src="../assets/img/logo.svg" alt="">
+                <div class="menu-2">
+
+                    <ul>
+                        <li><a href="#">Horarios</a></li>
+                    </ul>
+                    <!-- Redes Sociales-->
+                    <div class="sociales">
+
+                        <!--Enlace Redes (1)-->
+                        <a href="#">
+                            <div class="social">
+                                <img src="../assets/img/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <!--Enlace Redes (2)-->
+                        <a href="#">
+                            <div class="social">
+                                <img src="../assets/img/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <!--Enlace Redes (3)-->
+                        <a href="#">
+                            <div class="social">
+                                <img src="../assets/img/s3.svg" alt="">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Botón "Ver Carrito" -->
+                <button id="ver-carrito">Carrito</button>
+
+            </nav>
+        </div>
+
+        <main>
+            <!-- Sección de Compra de Hamburguesa -->
+            <section class="compra-hamburguesa container">
+                <h2>Compra tu hamburguesa Doble Carne</h2>
+                <div class="hamburguesa">
+                    <img src="../assets/img/food1.png" alt="Hamburguesa">
+                    <h3>Hamburguesa Doble Carne</h3>
+                    <p>Deliciosa hamburguesa con Doble carne, lechuga, tomate y queso.</p>
+                    <p>Precio: $80.0</p>
+                    <button class="carrito" data-producto="Hamburguesa Doble Carne" data-precio="80.0">Agregar al carrito</button>
+                </div>
+            </section>
+
+
+            <!-- Menú del carrito -->
+            <div class="carrito-menu">
+                <div class="carrito-header">
+                    <h3>Carrito de Compras</h3>
+                </div>
+                <div class="carrito-items">
+                    <div class="carrito-productos">
+                        <ul id="lista-productos">
+                            <!-- Los productos del carrito se mostrarán aquí -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="carrito-total">
+                    <h4>Total: $<span id="total-carrito">0.0</span></h4>
+                </div>
+                <button class="cerrar-carrito" id="cerrar-carrito">Cerrar Carrito</button>
+            </div>
+
+        </main>
+
+
+
+        <!--Seccion de Informacion-->
+        <section class=" info container">
+            <div class=" info-img">
+                <img src="../assets/img/info.png" alt="">
+
+            </div>
+
+            <div class="info-text">
+                <h2>Información</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At illo, recusandae fuga beatae
+                    voluptatem,
+                    dolorum dolores voluptates sit excepturi cum qui veritatis modi ipsa exercitationem quisquam
+                    mollitia
+                    delectus a ex!
+                </p>
+                <a href="/pages/info.html" class="boton-2">Más Información</a>
+            </div>
+
+        </section>
+
+
+        <!--Enlaces y Links-->
+        <footer class="footer container">
+            <img class="logo-2" src="../assets/img/logo.svg" alt="">
+
+            <!-- -->
+            <div class="enlaces">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+
+            </div>
+
+            <!-- -->
+            <div class="enlaces">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Links Redes Sociales -->
+            <div class="enlaces">
+                <h4>Redes Sociales</h4>
+                <div class="sociales">
+
+                    <!--Enlace Redes (1)-->
+                    <a href="#">
+                        <div class="social">
+                            <img src="../assets/img/s1.svg" alt="">
+                        </div>
+                    </a>
+                    <!--Enlace Redes (2)-->
+                    <a href="#">
+                        <div class="social">
+                            <img src="../assets/img/s2.svg" alt="">
+                        </div>
+                    </a>
+                    <!--Enlace Redes (3)-->
+                    <a href="#">
+                        <div class="social">
+                            <img src="../assets/img/s3.svg" alt="">
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- cargar archivo JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/carrito.js"></script>
+
+</body>
+
+</html>
